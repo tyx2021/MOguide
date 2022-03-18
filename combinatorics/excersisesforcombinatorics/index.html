@@ -9,6 +9,32 @@
             <a href="https://mo-guide.vercel.app/combinatorics/Introtocombinatorics">Introduction</a>
             <a href="https://mo-guide.vercel.app/combinatorics/Basiccombinatoricalcalculations">Basic Combinatoric Calculations</a>
             <a href="https://mo-guide.vercel.app/combinatorics/excersisesforcombinatorics">Excersises</a>
+            <p>Here is one of my favourite questions involving the choose function</p>
+        <p>Find the number of rectangles in this figure. Try it before looking at the solution!
+        </p>
+        <img src="grid.jpg">
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+            <p>
+                For this question, we note that any 2 points on each side of the whole figure, when lines are drawn through the selected points, rectangles would be formed. There are 5 points on the length of the figure and 4 points on the breadth of the figure. Therefore, we choose 2 points among the 5 points for the length and 2 points among the 4 points for the breadth. The answer would be 5C2x4C2=60.
+                <br>Note: this question could also be solved by counting manually. However this takes a long time so it is recommended to use the method above.
+            </p>
         </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
