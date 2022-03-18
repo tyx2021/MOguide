@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../../style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="topnav">
@@ -14,5 +15,22 @@
         <h1>
             Basic Combinatoric Calculations
         </h1>
+        <h3>Factorials</h3>
+        <p> Let me introduce to you a new function! No, literally. You don't get it? The new function is '!'. </p>
+        <p>So what does this ! mean? Let's see if you can figure it out yourself<br>1!=1<br>2!=2<br>3!=6<br>4!=24<br>5!=120</p>
+        <p>If you couldn't see it, it's fine. However, if you did see it you really are a genius!</p>
+        <code>n!=n(n-1)(n-2)....1</code>
+        <p>So, for example 5!=5x4x3x2x1=120</p>
+        <p>Now, you might recognise these numbers</p>
+        <p>That's because, you've seen them in the introduction!</p>
+        <p>You see, if you have n gifts and n friends, the number of possibilities is n!</p>
+        <p>Now, here is a factorial calculator. Play with it to your heart's desire!</p>
+        <form>
+            <p>What number do you want to take the factorial of?</p>
+            <input type="text" id="factorialinput">
+        </form>
+        <button onclick="factorial()">Submit</button>
+        <p id="factorialoutput"></p>
+        <h3>Subfactorials</h3>
     </body>
 </html>

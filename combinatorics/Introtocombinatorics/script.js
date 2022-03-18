@@ -25,3 +25,4 @@ function submitansthree() {
         document.getElementById('ansthreecheck').innerHTML="Your answer " + x +" is wrong."
     }
 }
+
