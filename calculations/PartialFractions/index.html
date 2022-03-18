@@ -11,5 +11,44 @@
             <a href="https://mo-guide.vercel.app/calculations/PartialFractions">Partial Fractions </a>
             <a href="https://mo-guide.vercel.app/calculations/Sumsofintegersandfractions">Sums of integers and fractions </a>
         </div>
+        <h1>Partial Fractions</h1>
+        <p>So what are partial fractions? They are generally convertible to/similar to this form: <br>
+            (1/1-½)+(½-⅓)+(⅓-¼)+.........
+        </p>
+        <p>You might realise they actually cancel out, reducing the whole equation to just 1 and the last fraction in the series. They actually come in different forms; you just have to see them and be able to convert them into this form to cancel out everything. </p>
+        <p>Normally this is in the form of  1/(1x2) + 1/(2 x 3) + 1/(3 x 4)....=(1/1 - 1/2) + (1/2 - 1/3) + (1/3 - 1/4)</p>
+        <p>Here are some examples:</p>
+        <p>Convert 1/1+1/(1+2)+1/(1+2+3)... into partial fractions</p>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+            <p>
+                Notice how 1/1 = 1/2 x 2, 1/(1 + 2)=1/6 x 2 and 1/(1 + 2 + 3)=1/12 x 2 and so on.<br>
+                So, 1/1 + 1/(1 + 2) + 1/(1 + 2 + 3) + ... = 2(1/(1 x 2) + 1/(2 x 3) + 1/(3 x 4) + ....) =<u>2((1/1 - 1/2) + (1/2 - 1/3) + (1/3 - 1/4) + ...)</u>
+            </p>
+        </div>
+        <p>Convert 1/(1 x 2 x 3) + 1/(2 x 3 x 4) + 1/(3 x 4 x 5) + .... </p>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+            <p>
+                Notice 1/(1 x 2 x 3)= 1/2(1/(1 x 2)- 1/(2 x 3)) and 1/(2 x 3 x 4)=1/2(1/(2 x 3) - 1/(3 x 4))<br>
+                Therefore 1/(1 x 2 x 3) + 1/(2 x 3 x 4) + 1/(3 x 4 x 5) = <u>1/2((1/(1 x 2)- 1/(2 x 3))+(1/(2 x 3) - 1/(3 x 4))+(1/(3 x 4) - 1/(4 x 5)))</u>
+            </p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
