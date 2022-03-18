@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../style.css">
+    </head>
+    <body>
+        <div className={styles.topnav}>
+            <a href="https://mo-guide.vercel.app/combinatorics">Home</a>
+            <a href="https://mo-guide.vercel.app/combinatorics/Introtocombinatorics">Introduction</a>
+            <a href="https://mo-guide.vercel.app/combinatorics/Basiccombinatoricalcalculations">Basic Combinatoric Calculations</a>
+            <a href="https://mo-guide.vercel.app/combinatorics/Choosefunction">The Choose Function</a>
+            <a href="https://mo-guide.vercel.app/combinatorics/excersisesforcombinatorics">Excersises</a>
+        </div>
+        
+        <h1>
+            Intro to Combinatorics
+        </h1>
+        <p>Imagine being at a Christmas party. You have 3 friends and 3 gifts, A, B and C to give them. How many ways are there to give these gifts to your friends? Give it a try</p>
+        <p className={styles.solution}>
+            Let us draw a table to see all the possible ways to give the gifts to your friends, and say their names are Alice, Bob and Charlie
+            <table className={styles.table}>
+                <tr>
+                    <th className={styles.th}>Alice</th>
+                    <th className={styles.th}>Bob</th>
+                    <th className={styles.th}> Charlie</th>
+                </tr>
+                <tr>
+                    <td className={styles.td}>A</td>
+                    <td className={styles.td}>B</td>
+                    <td className={styles.td}>C</td>
+                </tr>
+                <tr>
+                    <td className={styles.td}>A</td>
+                    <td className={styles.td}>C</td>
+                    <td className={styles.td}>B</td>
+                </tr>
+                <tr>
+                    <td className={styles.td}>B</td>
+                    <td className={styles.td}>A</td>
+                    <td className={styles.td}>C</td>
+                </tr>
+                <tr>
+                    <td className={styles.td}>B</td>
+                    <td className={styles.td}>C</td>
+                    <td className={styles.td}>A</td>
+                </tr>
+                <tr>
+                    <td className={styles.td}>C</td>
+                    <td className={styles.td}>A</td>
+                    <td className={styles.td}>B</td>
+                </tr>
+                <tr>
+                    <td className={styles.td}>C</td>
+                    <td className={styles.td}>B</td>
+                    <td className={styles.td}>A</td>
+                </tr>
+            </table>
+        </p>
+        <p>As you can see, there are 6 combinations. Simple right? Not so quick. What if we increased the number of people to 4, or even 5? How long would it take to list all the possibilities?</p>
+        <p>Clearly, we need another method</p>
+        <h2>The better method</h2>
+        <p>Use this time to think of another method, use your brain to see if you can think of anything. If not, no worries, we will show you!</p>
+    </body>
+</html>
