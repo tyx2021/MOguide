@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../../style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="topnav">
@@ -60,5 +61,67 @@
         <p>Clearly, we need another method</p>
         <h2>The better method</h2>
         <p>Use this time to think of another method, use your brain to see if you can think of anything. If not, no worries, we will show you!</p>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+            <p>
+                Let's think about this in another way. Think in Alice's perspective, which gift do you think Alice would like most? Well there are 3 possibilities. Now, after that, which gift do you think Bob would like most? Well, since we have already chosen a gift for Alice, there are now 2 possibilities for Bob. Finally, there is only one possibility for Charlie.
+                <br> So in conclusion, 3 choices for Alice, 2 for Bob and 1 for Charlie. So, the number of possibilities = 1 x 2 x 3 = 6, which is the answer!
+            </p>
+        </div>
+        <p>Using this method, imagine the same scenario but now you have 4 friends and 4 gifts. The same question, how many possibilities are there?</p>
+        <form>
+            <p>Put your answer here to be checked</p>
+            <input type="text" id="ansone">
+            <p id="ansonecheck"></p>
+        </form>
+        <button onclick="submitansone()">Submit</button>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+            <p>
+                Similarly to our previous example, the first friend has 4 possible gifts, the second 3, the third 2, and the last 1. So the number of possibilities is 1x2x3x4=24
+            </p>
+        </div>
+        <p>Cool! Now, let's change the scenario again. What if we have 4 friends but we have 5 gifts?(The last gift will be given to one of your friends at a later date) </p>
+        <form>
+            <p>Put your answer here to be checked</p>
+            <input type="text" id="anstwo">
+            <p id="anstwocheck"></p>
+        </form>
+        <button onclick="submitanstwo()">Submit</button>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+            <p>
+                Again, the first friend could get 5 possible gifts, the second, 4 the third, 3, and the forth, 2. The number of possibilities=5x4x3x2=120
+            </p>
+        </div>
+        <p>Okay, you should be getting the hang of this. Final question. Again, same scenario but now 4 friends and 6 gifts. Go!</p>
+        <form>
+            <p>Put your answer here to be checked</p>
+            <input type="text" id="ansthree">
+            <p id="ansthreecheck"></p>
+        </form>
+        <button onclick="submitansthree()">Submit</button>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+            <p>
+                Okay for the last time now. The first friend could get 6 possible gifts, the second, 5, the third, 4 and the fourth, 3. The number of possibilities=6x5x4x3=360
+            </p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
