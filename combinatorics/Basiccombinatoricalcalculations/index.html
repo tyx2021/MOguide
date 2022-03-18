@@ -2,7 +2,16 @@
 <html>
     <head>
         <link rel="stylesheet" href="../../style.css">
-        <script src="script.js"></script>
+        <script>
+            function factorial() {
+            x=document.getElementById('factorialinput').value
+            output=1
+            for(i=1;i<=x;i++){
+                output=output*i
+            }
+            document.getElementById('factorialoutput').innerHTML="The factorial of "+x+" is "+ output
+            }
+        </script>
     </head>
     <body>
         <div class="topnav">
