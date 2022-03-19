@@ -13,13 +13,28 @@
         <p>Here is one of my favourite questions involving the choose function</p>
         <p>Find the number of rectangles in this figure. Try it before looking at the solution!
         </p>
-        <img src="https://mo-guide.vercel.app/images/grid.jpg">
+        <img src="https://mo-guide.vercel.app/images/combinatoricsone.jpg">
         <button class="accordion">Show the solution</button>
         <div class="panel">
             <p>
                 For this question, we note that any 2 points on each side of the whole figure, when lines are drawn through the selected points, rectangles would be formed. There are 5 points on the length of the figure and 4 points on the breadth of the figure. Therefore, we choose 2 points among the 5 points for the length and 2 points among the 4 points for the breadth. The answer would be 5C2x4C2=60.
                 <br>Note: this question could also be solved by counting manually. However this takes a long time so it is recommended to use the method above.
             </p>
+          </div>
+        <p>
+          Here's another question:
+        </p>
+        <p>#</p>
+        <p>An ant is travelling on the following grid. It can only move right or upwards. Given the ant starts at point A and needs to reach point B, how many ways are there for the ant to reach point B?</p>
+        <img src="https://mo-guide.vercel.app/images/combinatoricstwo.jpg">
+        <button class="accordion"></button>
+        <div class="panel">
+          <p>
+              If we let a right movement be R and a upward movement be U, one possible way for the ant to move from A to B is RRRRRUUUU. Now notice for each of the routes, there must be 5 'R's and 4 'U's. <br>
+              So, we only have to choose when we move in the upward direction and the rest will be right movements. Since we have 9 total movements, the possible number of movements 9C4 = 126
+              <br>There are other methods, but this is by far the simplest.
+          </p>
+        </div>
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
