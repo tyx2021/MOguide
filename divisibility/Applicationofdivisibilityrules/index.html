@@ -12,5 +12,58 @@
             <a href="https://mo-guide.vercel.app/divisibility/ModularArithmetic">Modular Arithmetic</a>
             <a href="https://mo-guide.vercel.app/divisibility/Excersises">Excersises</a>
         </div>
+        <h1>Excersises for divisibility rules</h1>
+        <p> Q1. Prerequisites: Divisibility rules</p>
+        <p> The number 20022002 . . . 20022002 is formed by writing 2002 blocks of '2002'.<br>
+            Find the remainder when the number is divided by 9.<br>
+            (SMOPS 2002 Round 1 Qn 21)
+        </p>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+          <p>
+              In every '2002' the sum of digits is 2 + 0 + 0 + 2 = 4. So the sum of 2002 '2002's is 2002 x 4 =8008<br>
+              The sum of digits of 8008 is 16<br>
+              The sum of digits of 16 is 7<br>
+              So the number has a remainder of 9
+          </p>
+        </div>
+        <p>Q2. Prerequisites: Divisibility Rules</p>
+        <p>
+            Only one of the following four numbers is a perfect square. Which one is it?<br>
+            (1) 76186 (2) 750235 (3) 921438 (4) 2660161<br>
+            (SMOPS 2014 Q.5)
+        </p>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+          <p>
+            We can see that 76186 is divisible by 2 but not 4, so that must not be the square number. The same applies for 921438. We can also see that 75025 is divisible by 5 but not 25. Hence the answer is (4) 2660161
+          </p>
+        </div>
+        <p>Q3. Prerequisites: Divisibility Rules</p>
+        <p>. A 5-digit number written in the form <span class="overline">24abc</span> has the last three digits unknown. If this number is divisible by 3, 4 and 5 respectively, find the greatest possible value that <span class="overline">abc</span> can take.
+            (SMOPS 2013 Q.11)
+        </p>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+          <p>
+            Since 24000 is divisible by 2, 3 and 5, <span class="overline">xyz</span> must be divisible by 2, 3 and 5. The largest value of <span class="overline">xyz</span> is 990.
+          </p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
