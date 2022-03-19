@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="shortcut icon" href="https://tse4.mm.bing.net/th?id=OIP.fqCa3wEQm_FVmnMhyPgcbgHaJQ&pid=Api&P=0&w=136&h=170">
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="https://mo-guide.vercel.app/divisibility">Home</a>
+            <a href="https://mo-guide.vercel.app/divisibility/Basicdivilisibilityrules">Basic divilisibility rules</a>
+            <a href="https://mo-guide.vercel.app/divisibility/Applicationofdivisibilityrules">Application of divisibility rules</a>
+            <a href="https://mo-guide.vercel.app/divisibility/ModularArithmetic">Modular Arithmetic</a>
+            <a href="https://mo-guide.vercel.app/divisibility/Excersises">Excersises</a>
+        </div>
+        <h1>Basic Divisibility Rules</h1>
+        <p>Here are the most basic divisibility rules. Do note that if you have a divisibility rule for a number like 12, the number must work for both the divisibility rule of 3 and 4</p>
+        <p>Divisibility by 2</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+                
+            </p>
+        </div>
+        <p>Divisibility by 3</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+
+            </p>
+        </div>
+        <p>Divisibility by 4</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+
+            </p>
+        </div>
+        <p>Divisibility by 5</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+
+            </p>
+        </div>
+        <p>Divisibility by 7</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+
+            </p>
+        </div>
+        <p>Divisibility by 8</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+
+            </p>
+        </div>
+        <p>Divisibility by 9</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+
+            </p>
+        </div>
+        <p>Divisibility by 11</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+
+            </p>
+        </div>
+
+        <p>Divisibility by 13</p>
+        <button class="accordion">Show the proof</button>
+        <div class="panel">
+            <p>
+
+            </p>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
+    </body>
+</html>
