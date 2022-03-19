@@ -7,5 +7,38 @@
     <body>
         <h1>Using all that you have learnt, try out this paper!</h1>
         <p>Sidenote: All these questions were created by us!</p>
+        <p>Let x equal to 12230590464 and y is the nth root of x. Given 12230590464 = 2^24 * 3^6 and y is a whole number, how many whole number values of n are there and what are they?</p>
+        <button class="accordion">Show the Solution</button>
+        <div class="panel">
+            <p>
+                HCF(6,24)=6<br>
+                6 = 2 x 3<br>
+                Factors of 6: 1,2,3,6<br>
+                Number of n=4
+            </p>
+        </div>
+        <p>An ant can move in 3 different directions on a 5 x 5 x 5 cube. How many ways are there for the ant to move from one end of the cube to the other?(You can use a calculator)</p>
+        <button class="accordion">Show the Solution</button>
+        <div class="panel">
+            <p>
+                The ant needs 15 movements to reach from one end to the other. Therefore the ant can move to the other end in 15C5 x 10C5 x 5C5 ways, or 756756 ways.
+            </p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
