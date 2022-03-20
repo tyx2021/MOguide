@@ -161,8 +161,8 @@
     color: blue;
   }
   
-  .th, .td {
-  border:1px solid white 
+  th, td {
+  border:1px solid rgb(0, 0, 0) 
   }
   table {
     padding: 5px;
