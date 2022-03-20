@@ -55,7 +55,41 @@
               Hence the solutions are y = 0, x = 1 and y = 5, x = 7.  
             </p>
         </div>
-
+        <p>What is the remainder when 3^2022 is divided by 11?</p>
+        <button class="accordion">Show the Solution</button>
+        <div class="panel">
+            <p>
+              Let's make a table
+            </p>
+            <table>
+              <tr>
+                <th>n(mod 5)</th>
+                <th>3^n(mod 11)</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <p>Since 2022 <span class="overline">=</span> 2(mod 5),</p>
+            <p>The remainder when 3^2022 is divided by 11 is 9.</p>
+        </div>
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
