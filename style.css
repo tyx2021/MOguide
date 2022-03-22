@@ -2,6 +2,15 @@
     align-items: center;
     padding: 20px;
   }
+  .sans-serif {
+    font-family:'Open Sans', sans-serif;
+  }
+  div{
+    padding:10px;
+  }
+  .serif {
+    font-family:'Spectral', serif;
+  }
   .main {
     min-height: 100vh;
     padding: 4rem 0;
