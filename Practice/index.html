@@ -90,6 +90,28 @@
             <p>Since 2022 = 2(mod 5),</p>(Do not that in actual working write an equal sign with a line over it.)
             <p>The remainder when 3^2022 is divided by 11 is 9.</p>
         </div>
+        <p>5 friends, Emily, Jane, Jack, John and Bob are lining up in a row. If Emily insists she has to be either the first or last in the row, how many possible combinations are there?</p>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+          <p>Since Emily has to be either the first or the last, split into 2 cases</p>
+          <p>If Emily is the first,</p>
+          <p>
+            Jane chooses one out of the remaining 4 positions<br>
+            Jack chooses one out of the remaining 3 positions<br>
+            John chooses one out of the remaining 2 positions<br>
+            Lastly Bob has only one choice of position.<br>
+            There are 4 x 3 x 2 x 1 combinations for this case, or 24 combinations.
+          </p>
+          <p>If Emily is the last,</p>
+          <p>
+            Jane chooses one out of the remaining 4 positions<br>
+            Jack chooses one out of the remaining 3 positions<br>
+            John chooses one out of the remaining 2 positions<br>
+            Lastly Bob has only one choice of position.<br>
+            There are 4 x 3 x 2 x 1 combinations for this case, or 24 combinations.
+          </p>
+          <p>Total number of combinations = 24 + 24 = 48</p>
+        </div>
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
