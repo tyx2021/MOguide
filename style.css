@@ -576,3 +576,6 @@ table {
 .overline {
   text-decoration: overline;
 }
+.credit {
+  font-size: small;
+}

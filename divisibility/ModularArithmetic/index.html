@@ -13,5 +13,35 @@
             <a href="https://mo-guide.vercel.app/divisibility/ModularArithmetic">Modular Arithmetic</a>
             <a href="https://mo-guide.vercel.app/divisibility/Excersises">Excersises</a>
         </div>
+        <h1>Modular Arithmetic</h1>
+        <h2>Introduction: What is Modular Arithmetic?</h2>
+        <p>In mathematics, modular arithmetic is a system of arithmetic for integers, where numbers "wrap around" when reaching a certain value, called the modulus. The modern approach to modular arithmetic was developed by Carl Friedrich Gauss in his book Disquisitiones Arithmeticae, published in 1801.</p>
+        <p class="credit">This is from wikipedia</p>
+        <p>So, how does Modular Arithmetic work?</p>
+        <p>Essentially, Modular Arithmetic is "remainder" but better. If you don't know what a remainder is, a remainder is the amount of stuff left after you divide something. For example 7 &#247; 4 = 1 remainder 3 because 1 x 4 + 3 = 7</p>
+        <p>Simple enough, now if we use the previous example, we could rewrite it as 7=3(mod 4) because 3 was the remainder when 7 was divided by 4. In general, if x &#247; y = a Remainder(From here on referred as R) z where a is a whole no., y = z(mod x)</p>
+        <p>Now try this question:What is 10(mod 3)?</p>
+        <button class="accordion">Show the solution</button>
+        <div class="panel">
+            <p>10 &#247; 3 = 3 R 1 </p>
+            <p>Therefore 10 = 1(mod 3)</p>
+        </div>
+        <p>One very important property of </p>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
