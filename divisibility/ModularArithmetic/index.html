@@ -26,7 +26,27 @@
             <p>10 &#247; 3 = 3 R 1 </p>
             <p>Therefore 10 = 1(mod 3)</p>
         </div>
-        <p>One very important property of </p>
+        <p>One very important property is this:</p>
+        <p>If x=y(mod z), x = az + y for some integer a. Let this be Identity 1.1</p>
+        <p>Using this, let's prove our second identity. Sit tight.</p>
+        <h3>Identity 1.2</h3>
+        <p>If x=y(mod z), x-y=0(mod z)</p>
+        <p>Let a be an integer</p>
+        <p>Firstly, using identity 1.1, x = az + y. Then x - y = ax + y - y = ax = 0(mod x)</p>
+        <p>Notice how we let a be an integer, not a <b>positive integer</b> but an <b>integer</b>.</p>
+        <p>This means that the identity also applies for negative values of mod. But... that makes no sense!</p>
+        <h3>Identity 1.3</h3>
+        <p>-x=y-x(mod y)</p>
+        <p>This is a follow-up for identity 1.2</p>
+        <p>So what is a negative mod?!</p>
+        <p>If we understand this concept, everything from now on will be much easier.</p>
+        <p>Let's try some things out. Hmmm well 2 = 2(mod 3) obviously. Then 2^2 = 1(mod 3)</p>
+        <p>So what numbers when squared become 1? Well, 1 squared obviously works but 1 is not equal to 2. That must mean that the other solution, or -1 is 2 in this case. This is the most crucial step</p>
+        <p>Think about it</p>
+        <p>Now as for the actual identity, we can see that a = a + b(mod b)</p>
+        <p>So if we replace a with -x, we get identity 1.3</p>
+        <p>But you might have a question: How does the crucial step even work and why is it true? We'll leave this as an excersise to the reader... sike </p>
+        <h3>Identity 1.4</h3>
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
