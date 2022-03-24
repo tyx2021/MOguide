@@ -26,6 +26,7 @@
             <p>10 &#247; 3 = 3 R 1 </p>
             <p>Therefore 10 = 1(mod 3)</p>
         </div>
+        <h2>Properties of Modular Arithmetic </h2>
         <p>One very important property is this:</p>
         <p>If x=y(mod z), x = az + y for some integer a. Let this be Identity 1.1</p>
         <p>Using this, let's prove our second identity. Sit tight.</p>
@@ -47,6 +48,13 @@
         <p>So if we replace a with -x, we get identity 1.3</p>
         <p>But you might have a question: How does the crucial step even work and why is it true? We'll leave this as an excersise to the reader... sike </p>
         <h3>Identity 1.4</h3>
+        <p> x * y(mod z) = x(mod z) * y(mod z)</p>
+        <p>Let a b, c and d be integers such that x = az + b, and y = cz + d </p>
+        <p>
+          x * y = (az + b)(cz + d) = acz<span class="power">2</span> + (ad + bc)z + bd = bd(mod z)
+        </p>
+        <p>Identity 1.4 is now proven</p>
+        <p>And we're done yay!</p>
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
