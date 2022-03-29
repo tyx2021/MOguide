@@ -13,5 +13,34 @@
             <a href="https://mo-guide.vercel.app/calculations/PartialFractions">Partial Fractions </a>
             <a href="https://mo-guide.vercel.app/calculations/Sumsofintegersandfractions">Sums of integers and fractions </a>
         </div>
+        <h1>Big Calculations</h1>
+        <p>Imagine a question that asks what is 3 x 3 - 2 x 2? Obviously it's five. If not, you probably shouldn't be learning this</p>
+        <p>Now imagine a question that asks what is 2005 x 2005 - 2003 x 2003.</p>
+        <p>Slightly harder eh?</p>
+        <h2>Identity 1</h2>
+        <p>x^2 - y^2 = (x + y)(x - y)</p>
+        <p>First, a^2 means a x a and a^3 means a x a x a. You get the pattern?</p>
+        <p>Anyways, is this true?</p>
+        <p>Try proving it yourself!</p>
+        <button class="accordion">Show the Solution</button>
+        <div class="panel">
+            <p></p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
